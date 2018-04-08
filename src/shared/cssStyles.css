@@ -1,0 +1,557 @@
+/* Body style for all pages */
+body {
+	font-family: 'Alice', sans-serif;font-size: 1em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-width: 350px;
+	background: url("background.jpg") repeat scroll center top transparent;
+	color: #333;
+}
+/* Container - this will be used in div which holds the different components. (not modals). */
+.container {
+	background: #fdfdfd;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+}
+
+@media (min-width: 741px) {
+	.container {
+		margin: auto;
+		margin-top: 2%;
+		margin-bottom: 3%;
+		width: auto;
+		max-width: 80%;
+		height: auto;
+		min-height: 500px;
+	}
+}
+@media (max-width: 740px) {
+	.container {
+		min-width: 300px;
+		width: auto;
+		max-width: 100%;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 990px) {
+	.always-lg {
+		max-width: 810px!important;
+	}
+}
+
+@media (min-width: 400px) {
+	.send-btn {
+		padding: 10px;
+		font-size: 1.2em;
+	}
+}
+/* The 2nd logo jumps to jumbotron on these resolutions. Why? */
+@media (max-width: 480px) {
+	.jumbotron {
+		margin-top: 100px;
+	}
+}
+
+a {
+	color: #29b8cc;
+}
+
+/* Styles for application page header. */
+.header {
+	padding-bottom: 30px;
+	margin-left: 0!important;
+	padding-left: 0!important;
+	padding-top: 5%;
+	width: 100%;
+	text-align:right;
+}
+
+.header img{
+	float:left;
+}
+
+.header ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.header li {
+	list-style-type: none;
+	padding: 0;
+	display: inline;
+	font-weight: 500;
+	color: #00aec4;
+	font-size: 1.3em!important;
+}
+
+li.selected {
+	border-bottom: 2px solid currentColor;
+	text-decoration: none;
+}
+
+.language-switcher li {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.form-title {
+	font-weight: bold;
+	font-size: 2em;
+	color: #00aec4;
+	padding-bottom: 25px;
+}
+
+.form-info {
+	border: solid #03A9F4;
+}
+
+.jumbotron {
+	background-color: transparent;
+	border: solid 1px #03A9F4;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+/* Styles for /draft page application form */
+.modal .input {
+	display: block;
+	margin-bottom: 20px;
+}
+
+input{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+textarea{
+	width: 100%;
+	height: 280px;
+	overflow-x: hidden;
+	resize: none;
+}
+
+.description-div {
+	border: thin solid black!important;
+	padding: 2%;
+	background-color: #ffffff!important;
+	word-wrap: break-word!important;
+	overflow-wrap: break-word!important;
+}
+
+/* We want the help texts to be red.*/
+.form-group span{
+	color: red;
+	font-weight: 200;
+}
+
+label span{
+	font-weight: 500;
+	color: black!important;
+}
+
+.form-check-input {
+	width: 24px;
+	height: 24px;
+	padding: 10px;
+	margin:0;
+	vertical-align: bottom;
+	position: relative;
+	top: -1px;
+	*overflow: hidden;
+}
+
+.accept-terms-checkbox, .confirm-delete-checkbox{
+	float: left!important;
+	padding: 0!important;
+	vertical-align: middle!important;
+	position: static!important;
+	top: auto!important;
+	*overflow: visible!important;
+}
+
+.confirm-delete-checkbox {
+	margin-top: 0!important;
+}
+
+.dropzone span {
+	color: black!important;
+	font-size: 0.85em;
+}
+
+.btn-success {
+	float: right!important;
+}
+
+.btn {
+	word-wrap: break-word!important;
+	white-space: normal!important;
+}
+
+.p-as-btn {
+	word-wrap: break-word!important;
+	overflow-wrap: break-word!important;
+	white-space: normal!important;
+	margin-right: auto;
+	border-radius: 4px;
+	width: auto!important;
+	display: inline-block;
+	max-width: 90%;
+	color: #fdfdfd;
+	background: #007bff;
+	padding: 10px;
+}
+
+.p-as-btn:hover {
+	cursor: pointer;
+}
+
+.alert-dismissible {
+	padding: 15px;
+	font-size: 1.1em;
+}
+
+.react-confirm-alert-button-group button {
+	background: #00aec4;
+	margin-left: 10px;
+	width: 100%;
+	float: right;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.react-confirm-alert h3 {
+	font-weight: bold;
+}
+
+/* Styles for modal which shows sent form details on /draft and /management pages */
+
+.text-center {
+	text-align: center;
+}
+
+.modal-header {
+	padding: 20px;
+	background-color: #009bb4;
+	color: #fdfdfd;
+	font-weight: 600;
+	text-align: center;
+}
+
+.modal-title {
+	flex: 1;
+	font-size: 1.6em;
+}
+
+.modal-body {
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.modal-footer {
+	background-color: #009bb4;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+
+.confirm-delete {
+	background-color: #dc3545;
+}
+
+.modal-success {
+	background-color: #28a745;
+}
+
+.admin-settings-text {
+	font-size: 1.5em;
+	font-weight: 500;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: solid #00aec4;
+	border-bottom: solid #00aec4;
+	text-align: center;
+}
+
+.settings-category {
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.dropzone {
+	width  : 100%;
+	height : 20%;
+	border : 1px dashed #ced4da;
+	border-radius: .25rem;
+	text-align: center;
+	padding-top: 15px;
+}
+
+.dropzone:hover {
+	cursor: pointer;
+}
+
+/* Recaptcha background badge can be glitchy on mobile */
+.grecaptcha-badge {
+	box-shadow: none!important;
+}
+table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+}
+
+.table-title {
+	background: none!important;
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+	background: #eee;
+}
+
+table caption {
+	font-size: 1.5em;
+	margin: .5em 0 .75em;
+}
+table tr {
+	background: #f8f8f8;
+	border: 1px solid #ddd;
+	padding: .35em;
+}
+table th,
+table td {
+	padding: .625em;
+	text-align: center;
+}
+table th {
+	background: #009bb4;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+	/* Force table to not be like tables anymore */
+	.draft-table table, thead, tbody, th, td, tr {
+		display: block;
+	}
+
+	table {
+		border: 0;
+	}
+	table caption {
+		font-size: 1.3em;
+	}
+	table thead {
+		border: none;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	table tr {
+		border-bottom: 3px solid #ddd;
+		display: block;
+		margin-bottom: .625em;
+	}
+	table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: .8em;
+		text-align: center;
+	}
+	table td:before {
+		/*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	table td:last-child {
+		border-bottom: 0;
+	}
+}
+
+.dropdown button {
+	background-color: transparent;
+	border: none;
+}
+
+.dropdown-item {
+	background-color: transparent!important;
+	border: none!important;
+	text-align: center;
+}
+
+.border-hover {
+	background-color: transparent;
+	border: none;
+}
+
+.dropdown a:hover{
+	color: red;
+	cursor: pointer;
+}
+
+.dropdown-item:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	border: solid 2px #00aec4;
+	width: 290px;
+}
+
+.description {
+	pointer-events: none;
+}
+
+.redirect {
+	margin: auto;
+	width: 100%;
+	margin-top: 25%;
+	border: 3px solid green;
+	padding: 20px;
+	background-color: white;
+	word-wrap: break-word;
+	text-align: center;
+	vertical-align: center;
+}
+
+.login-page {
+	width: auto;
+	padding: 10% 0 0;
+	margin: auto;
+}
+.login-page .form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	width: auto;
+	max-width: 470px;
+	min-width: 300px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+label {
+	text-align: left!important;
+	font-weight: 800!important;
+}
+
+.form-group label.form-control-label {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	max-width: 100%;
+}
+
+label span{
+	font-weight: 800!important;
+}
+
+input[type="text"]:disabled {
+	background: #ffffff;
+}
+
+.login-page .form input {
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 1.1em;
+}
+
+.login-page .btn, .login-page .button {
+	text-transform: uppercase;
+	outline: 0;
+	background: #4CAF50;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+.login-page .form .button:hover,.form button:active,.form button:focus {
+	background: #43A047;
+}
+.login-page .form .message {
+	margin: 15px 0 0;
+	color: #b3b3b3;
+	font-size: 1.1em;
+}
+.login-page .form .message a {
+	color: #4CAF50;
+	text-decoration: none;
+}
+.form .register-form {
+	display: none;
+}
+.login-page .container {
+	position: relative;
+	z-index: 1;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.login-page .container:before, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.login-page .container .info {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.login-page .container .info span {
+	color: #4d4d4d;
+	font-size: 1.8em;
+}
+.login-page .container .info span a {
+	color: #000000;
+	text-decoration: none;
+}
+.login-page.container .info span {
+	color: #EF3B3A;
+}
+
+.close {
+	font-size: 2em;
+	font-weight: bold;
+	color: black;
+}
+.close:hover{
+	color: red;
+}

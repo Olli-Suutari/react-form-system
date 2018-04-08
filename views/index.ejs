@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <title><%= title %></title>
+    <% if (process.env.NODE_ENV === 'production') { %>
+      <link rel="stylesheet" href="/stylesheets/style-prod.css" />
+    <% } else { %>
+      <link rel="stylesheet" href="/stylesheets/style.css" />
+    <% } %>
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="react-app">Loading ...;</div>
+  </body>
+  <% if (process.env.NODE_ENV === 'production') { %>
+      <script src="/javascripts/build-prod.js"></script>
+  <% } else { %>
+    <script src="/javascripts/build.js"></script>
+  <% } %>
+  <noscript><div class="redirect"><br>Sivusto tarvitsee toimiakseen JavaScriptiä. Selaimesi ei tue Javascriptiä
+      tai se on estetty.<br>This page requires Javascript. Your browser does not support it or
+      it has been blocked.</div>
+  </noscript>
+</html>

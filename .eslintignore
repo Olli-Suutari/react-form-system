@@ -1,0 +1,8 @@
+webpack.config.babel.js
+webpack.config.babel.prod.js
+README.md
+node_modules/
+package.json
+package-lock.json
+configuration.json
+nodemon.json

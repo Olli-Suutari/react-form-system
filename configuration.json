@@ -1,0 +1,21 @@
+{
+  "crypto": {
+    "secret": "m92048bw7g2h6z9ih1ar30e7ee5pdo68t7qnnwy99izvlr8qfd49ao2hzdos1"
+  },
+  "expressSession": {
+    "secret": "xnd2j4onmozr689198pv0vq2d015vtplj4dkinjl7deh70a59pfy0fx2bej"
+  },
+  "emailAddress": {
+    "host": "smtp.ethereal.email",
+    "port": "587",
+    "auth": {
+      "user": "siunloim2xf3bjsz@ethereal.email",
+      "pass": "enb9kaYdK21G8BQbBC"
+    }
+  },
+  "mongoose": {
+    "mongodb": "mongodb://localhost/draft"
+  },
+  "domain": "http://127.0.0.1:8000",
+  "captchaSecret": "6LeR3VEUAAAAAJzoKSOlKwb1ziHycnfU0pml8fVj"
+}

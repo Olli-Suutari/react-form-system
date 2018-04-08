@@ -1,0 +1,66 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:ava/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "ava",
+    "react"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-underscore-dangle" : 0,
+    "max-len": [1, 150, 4],
+    "arrow-body-style": [0],
+    "react/jsx-no-bind": [0],
+    "import/no-unresolved": [0], // Until import plugin supports webpack 3 resolveModules
+    "linebreak-style": 0,
+    "indent": "off",
+    "import/newline-after-import": "off",
+    "no-tabs": "off",
+    "no-restricted-globals": "off",
+    "no-console": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "brace-style": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-alert":"off",
+    "props-per-line": "off",
+    "prefer-destructuring":"off",
+    "func-names":"off",
+    "no-useless-concat": "off",
+    "prefer-template": "off",
+    "prefer-arrow-callback": "off",
+    "comma-dangle": "off",
+    "object-curly-newline": "off",
+    "object-property-newline": "off",
+    "function-paren-newline": "off",
+    "consistent-return": "off",
+    "import/no-named-as-default": "off",
+    "class-methods-use-this": "off",
+    "no-return-assign": "off",
+    "react/no-unused-state": 0,
+    "react/prop-types": 0,
+    "react/no-string-refs": 0,
+    "react/no-unused-states": 0,
+    "react/prefer-stateless-functions": 0,
+    "react/jsx-index": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-closing-tag-location": "off",
+    "react/jsx-indent-props": "off",
+    "react/no-danger": "off",
+    "react/jsx-props-first-new-line": "off",
+    "react/jsx-max-props-per-line": "off",
+    "react/jsx-first-prop-new-line": "off",
+    "react/jsx-closing-bracket-location": "off",
+    "react/forbid-prop-types": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  }
+}
