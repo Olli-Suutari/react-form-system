@@ -1,3 +1,7 @@
+<strong>Note: As of February 2020 this repository is a bit outdated and the project which this was based on was updated recently </strong>
+
+<strong>TO DO: Update + React hooks</strong>
+
 This repository is based on a work project.
 
 The system includes an application form and the management page for viewing the sent applications.
